@@ -54,7 +54,7 @@ class ModelDeviceTest(TestCase):
     @override_settings(GCM_ANDROID_APIKEY='AIzaSyDTOsEsbVUnm2sPVHrV2AuiBMsN9279czQ', )
     def test_send_message_error_NotRegistered_real(self):
         response = self.not_registered.send_message()
-        self.assertEqual(response, 'The client app unregisters with GCM.')
+        self.assertEqual(response, 'The client app unregisters with fcm.')
 
     @override_settings(GCM_ANDROID_APIKEY='AIzaSyDTOsEsbVUnm2sPVHrV2AuiBMsN9279czQ')
     def test_send_message_error_MismatchSenderId_real(self):
@@ -81,9 +81,9 @@ class ModelDeviceTest(TestCase):
 
     @patch.object(Device, 'send_message')
     def test_send_message_error_NotRegistered(self, mock_send_message):
-        mock_send_message.return_value = 'The client app unregisters with GCM.'
+        mock_send_message.return_value = 'The client app unregisters with fcm.'
         response = self.device.send_message()
-        self.assertEqual(response, 'The client app unregisters with GCM.')
+        self.assertEqual(response, 'The client app unregisters with fcm.')
 
     @patch.object(Device, 'send_message')
     def test_send_message_error_InvalidPackageName(self, mock_send_message):
@@ -102,22 +102,22 @@ class ModelDeviceTest(TestCase):
     @patch.object(Device, 'send_message')
     def test_send_message_error_MessageTooBig(self, mock_send_message):
         mock_send_message.return_value = ('Check that the total size of the payload data included in a message does'
-                                          ' not exceed GCM limits: 4096 bytes for most messages, or 2048 bytes in the case'
+                                          ' not exceed fcm limits: 4096 bytes for most messages, or 2048 bytes in the case'
                                           ' of messages to topics or notification messages on iOS. This includes both'
                                           'the keys and the values.')
         response = self.device.send_message()
         self.assertEqual(response, 'Check that the total size of the payload data included in a message does'
-                                   ' not exceed GCM limits: 4096 bytes for most messages, or 2048 bytes in the case'
+                                   ' not exceed fcm limits: 4096 bytes for most messages, or 2048 bytes in the case'
                                    ' of messages to topics or notification messages on iOS. This includes both'
                                    'the keys and the values.')
 
     @patch.object(Device, 'send_message')
     def test_send_message_error_InvalidDataKey(self, mock_send_message):
         mock_send_message.return_value = ('Check that the payload data does not contain a key (such as from ,'
-                                          ' or gcm , or any value prefixed by google ) that is used internally by GCM.')
+                                          ' or fcm , or any value prefixed by google ) that is used internally by fcm.')
         response = self.device.send_message()
         self.assertEqual(response, 'Check that the payload data does not contain a key (such as from ,'
-                                   ' or gcm , or any value prefixed by google ) that is used internally by GCM.')
+                                   ' or fcm , or any value prefixed by google ) that is used internally by fcm.')
 
     @patch.object(Device, 'send_message')
     def test_send_message_error_InvalidTtl(self, mock_send_message):
@@ -169,13 +169,13 @@ class UtilsTest(TestCase):
         response = utils.get_device_model()
         self.assertIs(response, Device)
 
-    @patch('gcm.utils.notification_push')
+    @patch('fcm.utils.notification_push')
     def test_notification_push_mock(self, mock_notification_push):
         mock_notification_push.return_value = 'Message send successfully'
         response = utils.notification_push('dev_type', 'to', 'message')
         self.assertEqual(response, 'Message send successfully')
 
-    @patch('gcm.utils.get_device_model')
+    @patch('fcm.utils.get_device_model')
     def test_get_device_model_mock(self, mock_get_device_model):
         mock_get_device_model.return_value = Device
         response = utils.get_device_model()

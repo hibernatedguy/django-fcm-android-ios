@@ -6,16 +6,16 @@ from .utils import notification_push
 
 GCM_ERROR_MESSAGES = {'MissingRegistration': 'Check that the request contains a registration token',
                       'InvalidRegistration': 'Check the format of the registration token you pass to the server.',
-                      'NotRegistered': 'The client app unregisters with GCM.',
+                      'NotRegistered': 'The client app unregisters with fcm.',
                       'InvalidPackageName': 'Make sure the message was addressed to a registration token whose package'
                                             ' name matches the value passed in the request.',
                       'MismatchSenderId': 'A registration token is tied to a certain group of senders.',
                       'MessageTooBig': 'Check that the total size of the payload data included in a message does'
-                                       ' not exceed GCM limits: 4096 bytes for most messages, or 2048 bytes in the case'
+                                       ' not exceed fcm limits: 4096 bytes for most messages, or 2048 bytes in the case'
                                        ' of messages to topics or notification messages on iOS. This includes both'
                                        'the keys and the values.',
                       'InvalidDataKey': 'Check that the payload data does not contain a key (such as from ,'
-                                        ' or gcm , or any value prefixed by google ) that is used internally by GCM.',
+                                        ' or fcm , or any value prefixed by google ) that is used internally by fcm.',
                       'InvalidTtl': 'Check that the value used in time_to_live is an integer representing a'
                                     ' duration in seconds between 0 and 2,419,200 (4 weeks).',
                       'Unavailable': 'The server couldn\'t process the request in time.',

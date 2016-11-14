@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# django-gcm-ios-android documentation build configuration file, created by
+# django-fcm-ios-android documentation build configuration file, created by
 # sphinx-quickstart on Fri Jul 10 13:54:46 2015.
 #
 # This file is execfile()d with the current directory set to its

@@ -1,4 +1,4 @@
-Django gcm android ios's documentation!
+Django fcm android ios's documentation!
 =======================================
 
 django-fcm-android-ios is a simple Django app to send a message using Google Cloud Messaging HTTP connection server protocol.

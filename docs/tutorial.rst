@@ -18,17 +18,17 @@ Configure django-fcm-android-ios in your settings.py file::
 
     INSTALLED_APPS = (
          ...
-        'gcm',
+        'fcm',
     )
 
 
-    GCM_DEVICE_MODEL = "<model.device>" # default gcm.Device
+    GCM_DEVICE_MODEL = "<model.device>" # default fcm.Device
     GCM_IOS_APIKEY = "<IOS_APIKEY>"
     GCM_ANDROID_APIKEY = "<ANDROID_APIKEY>"
 
 Add django-fcm-android-ios resources to your URL router::
 
-    from gcm.routers import router
+    from fcm.routers import router
     urlpatterns = [
         ...
         url(r'api/', include(router.urls)),
@@ -58,7 +58,7 @@ Sending messages
 ================
 Using ``Django orm``::
 
-    from gcm.utils import get_device_model
+    from fcm.utils import get_device_model
     Device = get_device_model()
 
     device = Device.objects.get(dev_id=<dev_id>)
@@ -73,13 +73,13 @@ If you want to send additional arguments like ``delay_while_idle`` or other, add
 
 .. _GCM Connection Server Reference: https://developers.google.com/cloud-messaging/server-ref
 
-.. note:: For more information, see `GCM Connection Server Reference`_  docs.
+.. note:: For more information, see `fcm Connection Server Reference`_  docs.
 
 Multicast message
 
 ``django-fcm-android-ios`` supports sending message to multiple devices at once::
 
-    from gcm.utils import get_device_model
+    from fcm.utils import get_device_model
     Device = get_device_model()
     
     Device.objects.all().send_messages('my message')
@@ -90,7 +90,7 @@ Payload
 
 ``django-fcm-android-ios`` supports sending payload::
 
-    from gcm.utils import get_device_model
+    from fcm.utils import get_device_model
     Device = get_device_model()
 
     device = Device.objects.get(dev_id=<dev_id>)

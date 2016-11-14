@@ -1,4 +1,4 @@
-# This file is distributed under the same license as the gcm-ios-android package.
+# This file is distributed under the same license as the fcm-ios-android package.
 # Hugo Brilhante ashish2py@gmail.com, 2015.
 #
 #, fuzzy
