@@ -6,11 +6,11 @@ django-fcm-android-ios is a simple Django app to send a message using GCM HTTP c
 
 Detailed documentation is in the "docs" directory.
 
-.. image:: https://travis-ci.org/hugobrilhante/django-fcm-android-ios.svg
-  :target: https://travis-ci.org/hugobrilhante/django-fcm-android-ios
+.. image:: https://travis-ci.org/ashish2py/django-fcm-android-ios.svg
+  :target: https://travis-ci.org/ashish2py/django-fcm-android-ios
 
-.. image:: https://coveralls.io/repos/hugobrilhante/django-fcm-android-ios/badge.svg?branch=master&service=github
-  :target: https://coveralls.io/github/hugobrilhante/django-fcm-android-ios?branch=master
+.. image:: https://coveralls.io/repos/ashish2py/django-fcm-android-ios/badge.svg?branch=master&service=github
+  :target: https://coveralls.io/github/ashish2py/django-fcm-android-ios?branch=master
 
 .. image:: https://readthedocs.org/projects/django-fcm-android-ios/badge/?version=latest
    :target: http://django-fcm-android-ios.readthedocs.org/en/latest/
@@ -23,10 +23,10 @@ Detailed documentation is in the "docs" directory.
    :target: https://pypi.python.org/pypi/django-fcm-android-ios/1.0.0#downloads
 
 .. image:: https://img.shields.io/pypi/l/django-fcm-android-ios.svg
-   :target: https://github.com/hugobrilhante/django-fcm-android-ios/blob/master/LICENSE
+   :target: https://github.com/ashish2py/django-fcm-android-ios/blob/master/LICENSE
 
-.. image:: https://img.shields.io/github/release/hugobrilhante/django-fcm-android-ios.svg
-   :target: https://github.com/hugobrilhante/django-fcm-android-ios/releases/tag/1.0.0
+.. image:: https://img.shields.io/github/release/ashish2py/django-fcm-android-ios.svg
+   :target: https://github.com/ashish2py/django-fcm-android-ios/releases/tag/1.0.0
 
 .. image:: https://img.shields.io/pypi/pyversions/django-fcm-android-ios.svg
    :target: https://pypi.python.org/pypi/django-fcm-android-ios
@@ -78,5 +78,5 @@ Quick start
 
 
 .. image:: https://badges.gitter.im/Join%20Chat.svg
-   :alt: Join the chat at https://gitter.im/hugobrilhante/django-fcm-android-ios
-   :target: https://gitter.im/hugobrilhante/django-fcm-android-ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+   :alt: Join the chat at https://gitter.im/ashish2py/django-fcm-android-ios
+   :target: https://gitter.im/ashish2py/django-fcm-android-ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
