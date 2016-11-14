@@ -6,15 +6,15 @@ Tutorial
 Installation
 ============
 
-Install o django-gcm-android-ios::
+Install o django-fcm-android-ios::
 
-    pip install django-gcm-android-ios
+    pip install django-fcm-android-ios
 
 =============
 Configuration
 =============
 
-Configure django-gcm-android-ios in your settings.py file::
+Configure django-fcm-android-ios in your settings.py file::
 
     INSTALLED_APPS = (
          ...
@@ -26,7 +26,7 @@ Configure django-gcm-android-ios in your settings.py file::
     GCM_IOS_APIKEY = "<IOS_APIKEY>"
     GCM_ANDROID_APIKEY = "<ANDROID_APIKEY>"
 
-Add django-gcm-android-ios resources to your URL router::
+Add django-fcm-android-ios resources to your URL router::
 
     from gcm.routers import router
     urlpatterns = [
@@ -77,7 +77,7 @@ If you want to send additional arguments like ``delay_while_idle`` or other, add
 
 Multicast message
 
-``django-gcm-android-ios`` supports sending message to multiple devices at once::
+``django-fcm-android-ios`` supports sending message to multiple devices at once::
 
     from gcm.utils import get_device_model
     Device = get_device_model()
@@ -88,7 +88,7 @@ Multicast message
 
 Payload
 
-``django-gcm-android-ios`` supports sending payload::
+``django-fcm-android-ios`` supports sending payload::
 
     from gcm.utils import get_device_model
     Device = get_device_model()

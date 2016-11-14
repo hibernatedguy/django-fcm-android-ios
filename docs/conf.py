@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'django-gcm-android-ios'
+project = 'django-fcm-android-ios'
 copyright = '2015, Hugo Brilhante'
 author = 'Hugo Brilhante'
 
@@ -204,7 +204,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'django-gcm-android-iosdoc'
+htmlhelp_basename = 'django-fcm-android-iosdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -226,7 +226,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'django-gcm-android-ios.tex', 'django-gcm-android-ios Documentation',
+    (master_doc, 'django-fcm-android-ios.tex', 'django-fcm-android-ios Documentation',
      'Hugo Brilhante', 'manual'),
 ]
 
@@ -256,7 +256,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'django-gcm-android-ios', 'django-gcm-android-ios Documentation',
+    (master_doc, 'django-fcm-android-ios', 'django-fcm-android-ios Documentation',
      [author], 1)
 ]
 
@@ -270,8 +270,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'django-gcm-android-ios', 'django-gcm-android-ios Documentation',
-     author, 'django-gcm-android-ios', 'One line description of project.',
+    (master_doc, 'django-fcm-android-ios', 'django-fcm-android-ios Documentation',
+     author, 'django-fcm-android-ios', 'One line description of project.',
      'Miscellaneous'),
 ]
 

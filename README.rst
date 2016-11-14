@@ -2,43 +2,43 @@
 Django Firebase and iOS Messaging
 ======================
 
-django-gcm-android-ios is a simple Django app to send a message using GCM HTTP connection server protocol.
+django-fcm-android-ios is a simple Django app to send a message using GCM HTTP connection server protocol.
 
 Detailed documentation is in the "docs" directory.
 
-.. image:: https://travis-ci.org/hugobrilhante/django-gcm-android-ios.svg
-  :target: https://travis-ci.org/hugobrilhante/django-gcm-android-ios
+.. image:: https://travis-ci.org/hugobrilhante/django-fcm-android-ios.svg
+  :target: https://travis-ci.org/hugobrilhante/django-fcm-android-ios
 
-.. image:: https://coveralls.io/repos/hugobrilhante/django-gcm-android-ios/badge.svg?branch=master&service=github
-  :target: https://coveralls.io/github/hugobrilhante/django-gcm-android-ios?branch=master
+.. image:: https://coveralls.io/repos/hugobrilhante/django-fcm-android-ios/badge.svg?branch=master&service=github
+  :target: https://coveralls.io/github/hugobrilhante/django-fcm-android-ios?branch=master
 
-.. image:: https://readthedocs.org/projects/django-gcm-android-ios/badge/?version=latest
-   :target: http://django-gcm-android-ios.readthedocs.org/en/latest/
+.. image:: https://readthedocs.org/projects/django-fcm-android-ios/badge/?version=latest
+   :target: http://django-fcm-android-ios.readthedocs.org/en/latest/
    :alt: Documentation Status
 
-.. image:: https://img.shields.io/pypi/status/django-gcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-gcm-android-ios
+.. image:: https://img.shields.io/pypi/status/django-fcm-android-ios.svg
+   :target: https://pypi.python.org/pypi/django-fcm-android-ios
 
-.. image:: https://img.shields.io/pypi/dm/django-gcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-gcm-android-ios/1.0.0#downloads
+.. image:: https://img.shields.io/pypi/dm/django-fcm-android-ios.svg
+   :target: https://pypi.python.org/pypi/django-fcm-android-ios/1.0.0#downloads
 
-.. image:: https://img.shields.io/pypi/l/django-gcm-android-ios.svg
-   :target: https://github.com/hugobrilhante/django-gcm-android-ios/blob/master/LICENSE
+.. image:: https://img.shields.io/pypi/l/django-fcm-android-ios.svg
+   :target: https://github.com/hugobrilhante/django-fcm-android-ios/blob/master/LICENSE
 
-.. image:: https://img.shields.io/github/release/hugobrilhante/django-gcm-android-ios.svg
-   :target: https://github.com/hugobrilhante/django-gcm-android-ios/releases/tag/1.0.0
+.. image:: https://img.shields.io/github/release/hugobrilhante/django-fcm-android-ios.svg
+   :target: https://github.com/hugobrilhante/django-fcm-android-ios/releases/tag/1.0.0
 
-.. image:: https://img.shields.io/pypi/pyversions/django-gcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-gcm-android-ios
+.. image:: https://img.shields.io/pypi/pyversions/django-fcm-android-ios.svg
+   :target: https://pypi.python.org/pypi/django-fcm-android-ios
 
 
 
 Quick start
 -----------
 
-1. Install django-gcm-android-ios::
+1. Install django-fcm-android-ios::
 
-    pip install git+https://github.com/ashish2py/django-gcm-android-ios
+    pip install git+https://github.com/ashish2py/django-fcm-android-ios
 
 2. Add "gcm" to your INSTALLED_APPS setting like this::
 
@@ -78,5 +78,5 @@ Quick start
 
 
 .. image:: https://badges.gitter.im/Join%20Chat.svg
-   :alt: Join the chat at https://gitter.im/hugobrilhante/django-gcm-android-ios
-   :target: https://gitter.im/hugobrilhante/django-gcm-android-ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+   :alt: Join the chat at https://gitter.im/hugobrilhante/django-fcm-android-ios
+   :target: https://gitter.im/hugobrilhante/django-fcm-android-ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge

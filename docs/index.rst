@@ -1,30 +1,30 @@
 Django gcm android ios's documentation!
 =======================================
 
-django-gcm-android-ios is a simple Django app to send a message using Google Cloud Messaging HTTP connection server protocol.
+django-fcm-android-ios is a simple Django app to send a message using Google Cloud Messaging HTTP connection server protocol.
 
 
-.. image:: https://travis-ci.org/hugobrilhante/django-gcm-android-ios.svg
-   :target: https://travis-ci.org/hugobrilhante/django-gcm-android-ios
+.. image:: https://travis-ci.org/hugobrilhante/django-fcm-android-ios.svg
+   :target: https://travis-ci.org/hugobrilhante/django-fcm-android-ios
 
 
-.. image:: https://coveralls.io/repos/hugobrilhante/django-gcm-android-ios/badge.svg?branch=master&service=github
-   :target: https://coveralls.io/github/hugobrilhante/django-gcm-android-ios?branch=master
+.. image:: https://coveralls.io/repos/hugobrilhante/django-fcm-android-ios/badge.svg?branch=master&service=github
+   :target: https://coveralls.io/github/hugobrilhante/django-fcm-android-ios?branch=master
 
-.. image:: https://img.shields.io/pypi/status/django-gcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-gcm-android-ios
+.. image:: https://img.shields.io/pypi/status/django-fcm-android-ios.svg
+   :target: https://pypi.python.org/pypi/django-fcm-android-ios
 
-.. image:: https://img.shields.io/pypi/dm/django-gcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-gcm-android-ios/1.0.0#downloads
+.. image:: https://img.shields.io/pypi/dm/django-fcm-android-ios.svg
+   :target: https://pypi.python.org/pypi/django-fcm-android-ios/1.0.0#downloads
 
-.. image:: https://img.shields.io/pypi/l/django-gcm-android-ios.svg
-   :target: https://github.com/hugobrilhante/django-gcm-android-ios/blob/master/LICENSE
+.. image:: https://img.shields.io/pypi/l/django-fcm-android-ios.svg
+   :target: https://github.com/hugobrilhante/django-fcm-android-ios/blob/master/LICENSE
 
-.. image:: https://img.shields.io/github/release/hugobrilhante/django-gcm-android-ios.svg
-   :target: https://github.com/hugobrilhante/django-gcm-android-ios/releases/tag/1.0.0
+.. image:: https://img.shields.io/github/release/hugobrilhante/django-fcm-android-ios.svg
+   :target: https://github.com/hugobrilhante/django-fcm-android-ios/releases/tag/1.0.0
 
-.. image:: https://img.shields.io/pypi/pyversions/django-gcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-gcm-android-ios
+.. image:: https://img.shields.io/pypi/pyversions/django-fcm-android-ios.svg
+   :target: https://pypi.python.org/pypi/django-fcm-android-ios
 
 
 
@@ -57,9 +57,9 @@ Main features
 Links
 =====
 
-- `Github <https://github.com/hugobrilhante/django-gcm-android-ios/>`_
-- `Travis CI <https://travis-ci.org/hugobrilhante/django-gcm-android-ios/>`_
-- `Coveralls <https://coveralls.io/github/hugobrilhante/django-gcm-android-ios/>`_
+- `Github <https://github.com/hugobrilhante/django-fcm-android-ios/>`_
+- `Travis CI <https://travis-ci.org/hugobrilhante/django-fcm-android-ios/>`_
+- `Coveralls <https://coveralls.io/github/hugobrilhante/django-fcm-android-ios/>`_
 
 
 ==========
