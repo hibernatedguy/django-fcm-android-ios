@@ -6,33 +6,6 @@ django-fcm-android-ios is a simple Django app to send a message using fcm HTTP c
 
 Detailed documentation is in the "docs" directory.
 
-.. image:: https://travis-ci.org/ashish2py/django-fcm-android-ios.svg
-  :target: https://travis-ci.org/ashish2py/django-fcm-android-ios
-
-.. image:: https://coveralls.io/repos/ashish2py/django-fcm-android-ios/badge.svg?branch=master&service=github
-  :target: https://coveralls.io/github/ashish2py/django-fcm-android-ios?branch=master
-
-.. image:: https://readthedocs.org/projects/django-fcm-android-ios/badge/?version=latest
-   :target: http://django-fcm-android-ios.readthedocs.org/en/latest/
-   :alt: Documentation Status
-
-.. image:: https://img.shields.io/pypi/status/django-fcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-fcm-android-ios
-
-.. image:: https://img.shields.io/pypi/dm/django-fcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-fcm-android-ios/1.0.0#downloads
-
-.. image:: https://img.shields.io/pypi/l/django-fcm-android-ios.svg
-   :target: https://github.com/ashish2py/django-fcm-android-ios/blob/master/LICENSE
-
-.. image:: https://img.shields.io/github/release/ashish2py/django-fcm-android-ios.svg
-   :target: https://github.com/ashish2py/django-fcm-android-ios/releases/tag/1.0.0
-
-.. image:: https://img.shields.io/pypi/pyversions/django-fcm-android-ios.svg
-   :target: https://pypi.python.org/pypi/django-fcm-android-ios
-
-
-
 Quick start
 -----------
 
