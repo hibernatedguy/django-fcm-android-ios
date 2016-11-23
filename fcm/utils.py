@@ -20,13 +20,19 @@ def notification_push(dev_type, to, message=None, **kwargs):
             "You haven't set the 'GCM_{}_APIKEY' setting yet.".format(dev_type))
 
     payload = {
-        'ANDROID': {'to': to,
-                    'data': {
-                            'message': message,
-                            'sound': kwargs.get('sound', None),
-                            'image': kwargs.get('image', None),
-                            'title': kwargs.get('title', None)
-                        }},
+        'ANDROID': {
+            'to': to,
+            'data': {
+              "body": message.get('text'),
+            },
+            'notification': {
+              'title': message.get('title'),
+              'body': message.get('text'),
+              'icon': message.get('image'),
+              'sound': message.get('sound')
+            }
+          },
+
         'IOS': {
             'to': to,
             'notification': {
