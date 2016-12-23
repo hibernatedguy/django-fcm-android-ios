@@ -26,6 +26,25 @@ def notification_push(dev_type, to, message=None, **kwargs):
         {"icon": "emailGuests", "title": "ADD NUMBER", "callback": "app.emailGuests", "foreground": True},
         {"icon": "snooze", "title": "DISMISS", "callback": "app.snooze", "foreground": False}
     ]
+    instructions {
+        'content_type':
+        'id':
+        'notification_id':
+    }
+
+    ======== FCM PATTERN ========
+    'ANDROID': {
+        'to': to,
+        'data': {
+          "body": message.get('text'),
+        },
+        'notification': {
+          'title': message.get('title'),
+          'body': message.get('text'),
+          'icon': message.get('image'),
+          'sound': message.get('sound')
+        }
+      },
     '''
     payload = {
         'ANDROID': {
@@ -39,8 +58,8 @@ def notification_push(dev_type, to, message=None, **kwargs):
                     "summaryText": message.get('summary_text'),
                     "picture": message.get('banner'),
                     "actions": message.get('actions'),
-                    "instructions": message.get('instructions'),
-                    "vibrationPattern": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
+                    "extra_params": message.get('extra_params'),
+                    "vibrationPattern": message.get('vibration_pattern', [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50]),
                     "force-start": 1,
                     "content-available": 1
                 }
