@@ -19,20 +19,31 @@ def notification_push(dev_type, to, message=None, **kwargs):
         raise ImproperlyConfigured(
             "You haven't set the 'GCM_{}_APIKEY' setting yet.".format(dev_type))
 
+    '''
+    banner and notification-img : online and local file reference will work.
+    required fields : title, message
+    actions [
+        {"icon": "emailGuests", "title": "ADD NUMBER", "callback": "app.emailGuests", "foreground": True},
+        {"icon": "snooze", "title": "DISMISS", "callback": "app.snooze", "foreground": False}
+    ]
+    '''
     payload = {
         'ANDROID': {
             'to': to,
             'data': {
-              "body": message.get('text'),
+                    'title': message.get('title'),
+                    "message": message.get('body'),
+                    "image": message.get('icon'),
+                    'soundname': message.get('sound'),
+                    "style": message.get('style'),
+                    "summaryText": message.get('summary_text'),
+                    "picture": message.get('banner'),
+                    "actions": message.get('actions'),
+                    "vibrationPattern": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
+                    "force-start": 1,
+                    "content-available": 1
+                }
             },
-            'notification': {
-              'title': message.get('title'),
-              'body': message.get('text'),
-              'icon': message.get('image'),
-              'sound': message.get('sound')
-            }
-          },
-
         'IOS': {
             'to': to,
             'notification': {
