@@ -39,6 +39,7 @@ def notification_push(dev_type, to, message=None, **kwargs):
                     "summaryText": message.get('summary_text'),
                     "picture": message.get('banner'),
                     "actions": message.get('actions'),
+                    "instructions": message.get('instructions'),
                     "vibrationPattern": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
                     "force-start": 1,
                     "content-available": 1
