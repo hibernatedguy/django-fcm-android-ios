@@ -61,7 +61,8 @@ def notification_push(dev_type, to, message=None, **kwargs):
                     "extra_params": message.get('extra_params'),
                     "vibrationPattern": message.get('vibration_pattern', [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50]),
                     "force-start": 1,
-                    "content-available": 1
+                    "content-available": 1,
+                    "foreground": False
                 }
             },
         'IOS': {
