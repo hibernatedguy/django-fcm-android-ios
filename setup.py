@@ -5,7 +5,7 @@ import fcm
 version = fcm.VERSION
 
 requires = [
-    'Django>=1.7',
+    'Django==1.10.5',
     'djangorestframework>=3.3.1',
     'mock==1.0.1',
     'pytz==2015.4',
